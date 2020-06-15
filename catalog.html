@@ -27,42 +27,63 @@
 
   <h1>Магазин готовых шаблонов</h1>
   <section>
-    <h2>Фильтры товаров</h2>
-    <h3>Стоимость </h3>
+    <h2 class="visually-hidden">Фильтры товаров</h2>
 
-    <div class="slidecontainer">
-      <input type="range" min="1" max="15000" value="50" class="slider" id="myRange">
-    </div>
+    <fieldset>
+      <legend>
+        <h3>Стоимость </h3>
+      </legend>
+      <input type="range" min="0" max="15000" id="pricerange" name="pricerange">
+      <!--Требуется указать STEP-->
+      <label for="pricerange"></label>
+      <br>
+      <label for="minprice"> от </label>
+      <input type="number" id="minprice" name="minprice" min="0">
+      <label for="maxprice"> до </label>
+      <input type="number" id="maxprice" name="maxprice" max="15000">
+    </fieldset>
 
-    <h3>Сетка</h3>
-    <p>
-      <input type="radio" id="adaptive" name="adaptive">
+    <fieldset>
+      <legend>
+        <h3>Сетка</h3>
+      </legend>
+      <input type="radio" id="adaptive" name="adaptive" checked>
       <label for="adaptive">Адаптивная</label>
-    </p>
-    <p>
+      <br>
+
       <input type="radio" id="fix" name="fix">
       <label for="fix">Фиксированная</label>
-    </p>
-    <p>
+      <br>
+
       <input type="radio" id="resp" name="resp">
       <label for="resp">Резиновая</label>
-    </p>
-    <h3>Особенности</h3>
-    <p>
-      <label><input type="checkbox">Слайдер</label>
-    </p>
-    <p>
-      <label><input type="checkbox">Блок преимущества</label>
-    </p>
-    <p>
-      <label><input type="checkbox">Новости</label>
-    </p>
-    <p>
-      <label><input type="checkbox">Галерея</label>
-    </p>
-    <p>
-      <label><input type="checkbox">Корзина</label>
-    </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>
+        <h3>Особенности</h3>
+      </legend>
+      <input type="checkbox" id="fslider" name="fslider" checked>
+      <label for="fslider">Слайдер</label>
+      <br>
+
+      <input type="checkbox" id="fadv" name="fadv">
+      <label for="fadv">Блок преимущества</label>
+      <br>
+
+      <input type="checkbox" id="fnews" name="fnews" checked>
+      <label for="fnews">Новости</label>
+      <br>
+
+      <input type="checkbox" id="fgalery" name="fgalery">
+      <label for="fgalery">Галерея</label>
+      <br>
+
+      <input type="checkbox" id="fcart" name="fcart">
+      <label for="fcart">Корзина</label>
+      <br>
+    </fieldset>
+
     <button>Показать</button>
   </section>
   <section>
@@ -87,7 +108,7 @@
   </section>
   <!--Каталог товаров-->
   <section>
-    <h2>Каталог товаров</h2>
+    <h2 class="visually-hidden">Каталог товаров</h2>
     <ul>
       <li>
         <!--background-image -->
@@ -98,21 +119,21 @@
       </li>
       <li>
         <!--background-image -->
-        <img src="img/img-pink1.jpg" width="360" height="576"  alt="Pink проект">
+        <img src="img/img-pink1.jpg" width="360" height="576" alt="Pink проект">
         <h3>Sedona</h3>
         <p>ЗАМЕНИТЬ ТЕКСТ</p>
         <a href="#">9900 &#8381;</a>
       </li>
       <li>
         <!--background-image -->
-        <img src="img/img-barbershop1.jpg" width="360" height="576"  alt="Barbershop проект">
+        <img src="img/img-barbershop1.jpg" width="360" height="576" alt="Barbershop проект">
         <h3>Sedona</h3>
         <p>ЗАМЕНИТЬ ТЕКСТ</p>
         <a href="#">9900 &#8381;</a>
       </li>
       <li>
         <!--background-image -->
-        <img src="img/img-mishka1.jpg" width="360" height="576"  alt="Mishka проект">
+        <img src="img/img-mishka1.jpg" width="360" height="576" alt="Mishka проект">
         <h3>Sedona</h3>
         <p>ЗАМЕНИТЬ ТЕКСТ</p>
         <a href="#">9900 &#8381;</a>
@@ -125,7 +146,7 @@
       </li>
       <li>
         <!--background-image -->
-        <img src="img/img-kvast1.jpg" width="360" height="576"  alt="Kvast проект">
+        <img src="img/img-kvast1.jpg" width="360" height="576" alt="Kvast проект">
         <h3>Sedona</h3>
         <p>ЗАМЕНИТЬ ТЕКСТ</p>
         <a href="">9900 &#8381;</a>
@@ -148,7 +169,7 @@
     </ul>
   </section>
   <section>
-    <h2> Адрес студии</h2>
+    <h2 class="visually-hidden"> Адрес студии</h2>
     <div>
       <!--Критерий Б4-->
       <p>NЁRDS DESIGN STUDIO
@@ -161,7 +182,7 @@
     </div>
   </section>
   <footer>
-    <h2>Адрес и социальные сети</h2>
+    <h2 class="visually-hidden">Адрес и социальные сети</h2>
     <ul>
       <li>
         <a href="#">
