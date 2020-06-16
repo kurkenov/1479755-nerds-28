@@ -28,63 +28,71 @@
   <h1>Магазин готовых шаблонов</h1>
   <section>
     <h2 class="visually-hidden">Фильтры товаров</h2>
+    <form name="filter">
+      <fieldset>
+        <legend>
+          <h3>Стоимость </h3>
+        </legend>
+        <p>
+          <input type="range" min="0" max="15000" id="pricerange" name="pricerange">
+          <label for="pricerange"></label>
+        </p>
+        <p>
+          <label for="minprice"> от </label>
+          <input type="number" id="minprice" name="minprice" min="0">
+        </p>
+        <p>
+          <label for="maxprice"> до </label>
+          <input type="number" id="maxprice" name="maxprice" max="15000">
+        </p>
+      </fieldset>
 
-    <fieldset>
-      <legend>
-        <h3>Стоимость </h3>
-      </legend>
-      <input type="range" min="0" max="15000" id="pricerange" name="pricerange">
-      <!--Требуется указать STEP-->
-      <label for="pricerange"></label>
-      <br>
-      <label for="minprice"> от </label>
-      <input type="number" id="minprice" name="minprice" min="0">
-      <label for="maxprice"> до </label>
-      <input type="number" id="maxprice" name="maxprice" max="15000">
-    </fieldset>
+      <fieldset>
+        <legend>
+          <h3>Сетка</h3>
+        </legend>
+        <p>
+          <input type="radio" id="adaptive" name="setka" checked>
+          <label for="adaptive">Адаптивная</label>
+        </p>
+        <p>
+          <input type="radio" id="fix" name="setka">
+          <label for="fix">Фиксированная</label>
+        </p>
+        <p>
+          <input type="radio" id="resp" name="setka">
+          <label for="resp">Резиновая</label>
+        </p>
+      </fieldset>
 
-    <fieldset>
-      <legend>
-        <h3>Сетка</h3>
-      </legend>
-      <input type="radio" id="adaptive" name="adaptive" checked>
-      <label for="adaptive">Адаптивная</label>
-      <br>
+      <fieldset>
+        <legend>
+          <h3>Особенности</h3>
+        </legend>
+        <p>
+          <input type="checkbox" id="fslider" name="fslider" checked>
+          <label for="fslider">Слайдер</label>
+        </p>
+        <p>
+          <input type="checkbox" id="fadv" name="fadv">
+          <label for="fadv">Блок преимущества</label>
+        </p>
+        <p>
+          <input type="checkbox" id="fnews" name="fnews" checked>
+          <label for="fnews">Новости</label>
+        </p>
+        <p>
+          <input type="checkbox" id="fgalery" name="fgalery">
+          <label for="fgalery">Галерея</label>
+        </p>
+        <p>
+          <input type="checkbox" id="fcart" name="fcart">
+          <label for="fcart">Корзина</label>
+        </p>
+      </fieldset>
+    </form>
 
-      <input type="radio" id="fix" name="fix">
-      <label for="fix">Фиксированная</label>
-      <br>
-
-      <input type="radio" id="resp" name="resp">
-      <label for="resp">Резиновая</label>
-    </fieldset>
-
-    <fieldset>
-      <legend>
-        <h3>Особенности</h3>
-      </legend>
-      <input type="checkbox" id="fslider" name="fslider" checked>
-      <label for="fslider">Слайдер</label>
-      <br>
-
-      <input type="checkbox" id="fadv" name="fadv">
-      <label for="fadv">Блок преимущества</label>
-      <br>
-
-      <input type="checkbox" id="fnews" name="fnews" checked>
-      <label for="fnews">Новости</label>
-      <br>
-
-      <input type="checkbox" id="fgalery" name="fgalery">
-      <label for="fgalery">Галерея</label>
-      <br>
-
-      <input type="checkbox" id="fcart" name="fcart">
-      <label for="fcart">Корзина</label>
-      <br>
-    </fieldset>
-
-    <button>Показать</button>
+    <button type="submit">Показать</button>
   </section>
   <section>
     <h2>Сортировать</h2>
