@@ -2,226 +2,247 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Нёрдс</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <h1>Дизайн студия</h1>
-    <a href="index.html"> <img src="img/svg/nerds-logo.svg" width="160" height="65" alt="Логотип"></a>
-    <!--ЛОГО NERDS SVG-->
-    <nav>
-      <ul>
-        <li><a href="#"> Студия</a> </li>
-        <li><a href="#"> Клиенты</a></li>
-        <li><a href="catalog.html"> Магазин</a></li>
-        <li><a href="#"> Контакты</a></li>
-      </ul>
-    </nav>
-    <!--background-image -->
-    <a href="#">Корзина</a>
-  </header>
+    <header>
+        <h1 class="visually-hidden">Дизайн студия</h1>
+        <a href="index.html"> <img src="img/svg/nerds-logo.svg" width="160" height="65" alt="Логотип"></a>
+        <!--ЛОГО NERDS SVG-->
+        <nav class="topmenu">
+            <ul>
+                <li><a href="#"> Студия</a> </li>
+                <li><a href="#"> Клиенты</a></li>
+                <li><a href="catalog.html"> Магазин</a></li>
+                <li><a href="#"> Контакты</a></li>
+            </ul>
+        </nav>
+        <!--background-image-->
+        <a href="#" class="cart">Корзина</a>
+    </header>
 
-  <h1>Магазин готовых шаблонов</h1>
-  <section>
-    <h2 class="visually-hidden">Фильтры товаров</h2>
-    <form name="filter">
-      <fieldset>
-        <legend>
-          <h3>Стоимость </h3>
-        </legend>
-        <p>
-          <input type="range" min="0" max="15000" id="pricerange" name="pricerange">
-          <label for="pricerange"></label>
-        </p>
-        <p>
-          <label for="minprice"> от </label>
-          <input type="number" id="minprice" name="minprice" min="0">
-        </p>
-        <p>
-          <label for="maxprice"> до </label>
-          <input type="number" id="maxprice" name="maxprice" max="15000">
-        </p>
-      </fieldset>
+    <h1>Магазин готовых шаблонов</h1>
+    <section>
+        <h2 class="visually-hidden">Фильтры товаров</h2>
+        <form name="filter">
+            <fieldset>
+                <legend>
+                    <h3 class="filter-header">Стоимость </h3>
+                </legend>
+                <p>
+                    <input type="range" min="0" max="15000" id="pricerange" name="pricerange">
+                    <label for="pricerange"></label>
+                </p>
+                <p>
+                    <label for="minprice"> от </label>
+                    <input type="number" id="minprice" name="minprice" min="0">
+                </p>
+                <p>
+                    <label for="maxprice"> до </label>
+                    <input type="number" id="maxprice" name="maxprice" max="15000">
+                </p>
+            </fieldset>
 
-      <fieldset>
-        <legend>
-          <h3>Сетка</h3>
-        </legend>
-        <p>
-          <input type="radio" id="adaptive" name="setka" checked>
-          <label for="adaptive">Адаптивная</label>
-        </p>
-        <p>
-          <input type="radio" id="fix" name="setka">
-          <label for="fix">Фиксированная</label>
-        </p>
-        <p>
-          <input type="radio" id="resp" name="setka">
-          <label for="resp">Резиновая</label>
-        </p>
-      </fieldset>
+            <fieldset>
+                <legend>
+                    <h3 class="filter-header">Сетка</h3>
+                </legend>
+                <p>
+                    <input type="radio" id="adaptive" name="setka" checked>
+                    <label for="adaptive">Адаптивная</label>
+                </p>
+                <p>
+                    <input type="radio" id="fix" name="setka">
+                    <label for="fix">Фиксированная</label>
+                </p>
+                <p>
+                    <input type="radio" id="resp" name="setka">
+                    <label for="resp">Резиновая</label>
+                </p>
+            </fieldset>
 
-      <fieldset>
-        <legend>
-          <h3>Особенности</h3>
-        </legend>
-        <p>
-          <input type="checkbox" id="fslider" name="fslider" checked>
-          <label for="fslider">Слайдер</label>
-        </p>
-        <p>
-          <input type="checkbox" id="fadv" name="fadv">
-          <label for="fadv">Блок преимущества</label>
-        </p>
-        <p>
-          <input type="checkbox" id="fnews" name="fnews" checked>
-          <label for="fnews">Новости</label>
-        </p>
-        <p>
-          <input type="checkbox" id="fgalery" name="fgalery">
-          <label for="fgalery">Галерея</label>
-        </p>
-        <p>
-          <input type="checkbox" id="fcart" name="fcart">
-          <label for="fcart">Корзина</label>
-        </p>
-      </fieldset>
-    </form>
+            <fieldset>
+                <legend>
+                    <h3 class="filter-header">Особенности</h3>
+                </legend>
+                <p>
+                    <input type="checkbox" id="fslider" name="fslider" checked>
+                    <label for="fslider">Слайдер</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="fadv" name="fadv">
+                    <label for="fadv">Блок преимущества</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="fnews" name="fnews" checked>
+                    <label for="fnews">Новости</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="fgalery" name="fgalery">
+                    <label for="fgalery">Галерея</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="fcart" name="fcart">
+                    <label for="fcart">Корзина</label>
+                </p>
+            </fieldset>
+        </form>
 
-    <button type="submit">Показать</button>
-  </section>
-  <section>
-    <h2>Сортировать</h2>
-    <a href="#">По цене</a>
-    <a href="#">По типу </a>
-    <a href="#">По названию</a>
-    <span>
+        <button type="submit">Показать</button>
+    </section>
+    <section>
+        <h2 class="filter-header">Сортировать</h2>
+        <a href="#" class="sort-by-filter">По цене</a>
+        <a href="#" class="sort-by-filter">По типу </a>
+        <a href="#" class="sort-by-filter">По названию</a>
+        <span>
       <a href="#">
         <span class="visually-hidden">
           Сортировка по возростанию
         </span>
-      </a>
-    </span>
-    <span>
+        </a>
+        </span>
+        <span>
       <a href="#">
         <span class="visually-hidden">
           Сортировка по убыванию
         </span>
-      </a>
-    </span>
-  </section>
-  <!--Каталог товаров-->
-  <section>
-    <h2 class="visually-hidden">Каталог товаров</h2>
-    <ul>
-      <li>
-        <!--background-image -->
-        <img src="img/img-sedona1.jpg" width="360" height="576" alt="Sedona проект">
-        <h3>Sedona</h3>
-        <p>Информационный сайт для туристов</p>
-        <a href="">9900 &#8381;</a>
-      </li>
-      <li>
-        <!--background-image -->
-        <img src="img/img-pink1.jpg" width="360" height="576" alt="Pink проект">
-        <h3>Sedona</h3>
-        <p>ЗАМЕНИТЬ ТЕКСТ</p>
-        <a href="#">9900 &#8381;</a>
-      </li>
-      <li>
-        <!--background-image -->
-        <img src="img/img-barbershop1.jpg" width="360" height="576" alt="Barbershop проект">
-        <h3>Sedona</h3>
-        <p>ЗАМЕНИТЬ ТЕКСТ</p>
-        <a href="#">9900 &#8381;</a>
-      </li>
-      <li>
-        <!--background-image -->
-        <img src="img/img-mishka1.jpg" width="360" height="576" alt="Mishka проект">
-        <h3>Sedona</h3>
-        <p>ЗАМЕНИТЬ ТЕКСТ</p>
-        <a href="#">9900 &#8381;</a>
-      <li>
-        <!--background-image -->
-        <img src="img/img-aplus1.jpg" width="360" height="576" alt="Aplus проект">
-        <h3>Sedona</h3>
-        <p>ЗАМЕНИТЬ ТЕКСТ</p>
-        <a href="#">9900 &#8381;</a>
-      </li>
-      <li>
-        <!--background-image -->
-        <img src="img/img-kvast1.jpg" width="360" height="576" alt="Kvast проект">
-        <h3>Sedona</h3>
-        <p>ЗАМЕНИТЬ ТЕКСТ</p>
-        <a href="">9900 &#8381;</a>
-      </li>
-    </ul>
-    <!--переключение страниц-->
-    <ul>
-      <li>
-        <a href="#">1</a>
-      </li>
-      <li>
-        <a href="#">2</a>
-      </li>
-      <li>
-        <a href="#">3</a>
-      </li>
-      <li>
-        <a href="#">Следующая</a>
-      </li>
-    </ul>
-  </section>
-  <section>
-    <h2 class="visually-hidden"> Адрес студии</h2>
-    <div>
-      <!--Критерий Б4-->
-      <p>NЁRDS DESIGN STUDIO
-        191186, Санкт-Петербург,
-        ул. Б. Конюшенная, д. 19/8
-        тел. +7 (812) 275-75-75</p>
-      <a href="">напишите нам</a>
-      <img src="img/map1.png" width="1440" height="416" alt="Карта">
-      <img src="img/map-marker1.png" width="231" height="190" alt="Маркер карты">
-    </div>
-  </section>
-  <footer>
-    <h2 class="visually-hidden">Адрес и социальные сети</h2>
-    <ul>
-      <li>
-        <a href="#">
-          <!--background-image-->
-          <span class="visually-hidden">
+        </a>
+        </span>
+    </section>
+    <!--Каталог товаров-->
+    <section>
+        <h2 class="visually-hidden">Каталог товаров</h2>
+        <ul>
+            <li>
+                <!--background-image -->
+                <img src="img/img-sedona1.jpg" width="360" height="576" alt="Sedona проект">
+                <h3 class="item-header">Sedona</h3>
+                <p class="item-desc">Информационный сайт для туристов</p>
+                <a href="" class="button order">9900 &#8381;</a>
+            </li>
+            <li>
+
+                <img src="img/img-pink1.jpg" width="360" height="576" alt="Pink проект">
+                <h3 class="item-header">Sedona</h3>
+                <p class="item-desc">ЗАМЕНИТЬ ТЕКСТ</p>
+                <a href="#" class="button order">9900 &#8381;</a>
+            </li>
+            <li>
+
+                <img src="img/img-barbershop1.jpg" width="360" height="576" alt="Barbershop проект">
+                <h3 class="item-header">Sedona</h3>
+                <p class="item-desc">ЗАМЕНИТЬ ТЕКСТ</p>
+                <a href="#" class="button order">9900 &#8381;</a>
+            </li>
+            <li>
+
+                <img src="img/img-mishka1.jpg" width="360" height="576" alt="Mishka проект">
+                <h3 class="item-header">Sedona</h3>
+                <p class="item-desc">ЗАМЕНИТЬ ТЕКСТ</p>
+                <a href="#" class="button order">9900 &#8381;</a>
+            </li>
+            <li>
+
+                <img src="img/img-aplus1.jpg" width="360" height="576" alt="Aplus проект">
+                <h3 class="item-header">Sedona</h3>
+                <p class="item-desc">ЗАМЕНИТЬ ТЕКСТ</p>
+                <a href="#" class="button order">9900 &#8381;</a>
+            </li>
+            <li>
+                <!--background-image -->
+                <img src="img/img-kvast1.jpg" width="360" height="576" alt="Kvast проект">
+                <h3 class="item-header">Sedona</h3>
+                <p class="item-desc">ЗАМЕНИТЬ ТЕКСТ</p>
+                <a href="" class="button order">9900 &#8381;</a>
+            </li>
+        </ul>
+        <!--переключение страниц-->
+        <ul>
+            <li>
+                <a href="#" class="page-swither">1</a>
+            </li>
+            <li>
+                <a href="#" class="page-swither">2</a>
+            </li>
+            <li>
+                <a href="#" class="page-swither">3</a>
+            </li>
+            <li>
+                <a href="#" class="page-swither">Следующая</a>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h2 class="visually-hidden"> Адрес студии</h2>
+        <div>
+            <p class="company-name">NЁRDS DESIGN STUDIO</p>
+            <p> 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75</p>
+            <a href="" class="button contactus">напишите нам</a>
+            <img src="img/map1.png" width="1440" height="416" alt="Карта">
+            <img src="img/map-marker1.png" width="231" height="190" alt="Маркер карты">
+        </div>
+
+        <form name="contactus">
+            <fieldset>
+                <legend>
+                    <h3>напишите нам</h3>
+                </legend>
+                <label>Ваше имя</label>
+                <p>
+                    <input type="text" placeholder="Имя Фамилия" pattern="[А-Яа-я]*?\s[А-Яа-я]*">
+                </p>
+                <label>Ваш email</label>
+                <p>
+                    <input type="email" placeholder="email@example.com">
+                </p>
+                <label>Текст письма</label>
+                <p>
+                    <textarea placeholder="В свободной форме" rows="10">
+          </textarea>
+                </p>
+                <button type="submit">Отправить</button>
+            </fieldset>
+        </form>
+
+
+
+    </section>
+    <footer>
+        <h2 class="visually-hidden">Адрес и социальные сети</h2>
+        <ul>
+            <li>
+                <a href="#">
+                    <!--background-image-->
+                    <span class="visually-hidden">
             VK
           </span>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <span class="visually-hidden">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="visually-hidden">
             Facebook
           </span>
-          <!--background-image-->
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <!--background-image-->
-          <span class="visually-hidden">
+                    <!--background-image-->
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <!--background-image-->
+                    <span class="visually-hidden">
             Ins
           </span>
-        </a>
-      </li>
-    </ul>
-    <p>Давайте дружить, это выгодно!
-      Скидка 10% для друзей из социальных сетей.</p>
-  </footer>
-
+                </a>
+            </li>
+        </ul>
+        <p> <span class="discount">Давайте дружить, это выгодно!</span> Скидка 10% для друзей из социальных сетей.</p>
+    </footer>
 </body>
-
 
 </html>
