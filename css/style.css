@@ -4,6 +4,16 @@
         --white: #FFFFFF;
         --black: #000000;
         --light-dark: #283136;
+        --red: #FB565A;
+        --red2: #00CA74;
+        --red3: #D7373B;
+        --light-backgroud: #EEEEEE;
+        --green: #00CA74;
+        --green2: #00BC6C;
+        --green3: #00AA62;
+        --orange: #EFC84A;
+        --orange2: #EAB534;
+        --orange3: #E5A722;
     }
     /* Global */
     
@@ -72,6 +82,45 @@
         line-height: 18px;
         text-align: center;
         color: var(--white);
+    }
+    
+    .details,
+    .products {
+        background-color: var(--red);
+    }
+    
+    .details a:hover,
+    .products:hover a {
+        background-color: var(--red2);
+    }
+    
+    .details a:focus,
+    .products a:focus {
+        background-color: var(--red3);
+    }
+    
+    .apps {
+        background-color: var(--green);
+    }
+    
+    .apps a:hover {
+        background-color: var(--green2);
+    }
+    
+    .apps a:focus {
+        background-color: var(--green3);
+    }
+    
+    .prezi {
+        background-color: var(--orange);
+    }
+    
+    .prezi a:hover {
+        background-color: var(--orange2);
+    }
+    
+    .prezi a:focus {
+        background-color: var(--orange3);
     }
     
     .servicedescription {
@@ -150,4 +199,15 @@
     
     .contactus {
         display: none;
+    }
+    
+    .slider,
+    .navigation {
+        background-color: var(--light-backgroud);
+    }
+    /* style gide*/
+    
+    .topmenu a:hover,
+    .cart a:hover {
+        color: var(--red);
     }
