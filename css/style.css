@@ -1,315 +1,153 @@
-.visually-hidden {
-    position: absolute !important;
-    clip: rect(1px 1px 1px 1px);
-    clip: rect(1px, 1px, 1px, 1px);
-    padding: 0 !important;
-    border: 0 !important;
-    height: 1px !important;
-    width: 1px !important;
-    overflow: hidden;
-    display: none;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Roboto;
-    font-size: 16px;
-    line-height: 24px;
-    color: #283136;
-}
-
-a {
-    text-decoration: none;
-}
-
-img {
-    max-width: 100;
-    height: auto;
-}
-
-ul {
-    list-style: none;
-}
-
-
-/* HEADER PART*/
-
-.slogan {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 55px;
-    line-height: 55px;
-    display: flex;
-    align-items: center;
-    color: #000000;
-}
-
-h1 {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 55px;
-    line-height: 55px;
-    display: flex;
-    align-items: center;
-    color: #000000;
-}
-
-.slogan-descripton {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    color: #283136;
-}
-
-.topmenu {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 30px;
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-    color: #000000;
-}
-
-.cart {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 30px;
-    display: flex;
-    align-items: center;
-    text-align: right;
-    text-transform: uppercase;
-    color: #000000;
-}
-
-
-/*HEADER END*/
-
-h3 {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 30px;
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-    color: #000000;
-}
-
-p {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-}
-
-.button {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 18px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
-
-.servicedescription {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    color: #283136;
-}
-
-.slogan2 {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 45px;
-    line-height: 45px;
-    display: flex;
-    align-items: center;
-    color: #000000;
-}
-
-.slogan2details {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    color: #283136;
-}
-
-.company-date {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-    color: #000000;
-}
-
-.company-relusts {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 45px;
-    line-height: 64px;
-    color: #000000;
-}
-
-.percent-symbol {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 40px;
-    color: #000000;
-}
-
-.company-name {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 30px;
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-    color: #000000;
-}
-
-.discount {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 36px;
-}
-
-
-/*CATALOG PAGE*/
-
-.filter-header {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 30px;
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-}
-
-.sort-by-filter {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-}
-
-.item-header {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 30px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.page-swither {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 18px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-    color: #000000;
-}
-
-
-/* roboto-100 - latin_cyrillic */
-
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 100;
-    src: url('../fonts/roboto-v20-latin_cyrillic-100.eot');
-    /* IE9 Compat Modes */
-    src: local('Roboto Thin'), local('Roboto-Thin'), url('../fonts/roboto-v20-latin_cyrillic-100.woff2') format('woff2'), /* Super Modern Browsers */
-    url('../fonts/roboto-v20-latin_cyrillic-100.woff') format('woff'), /* Modern Browsers */
-}
-
-
-/* roboto-regular - latin_cyrillic */
-
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/roboto-v20-latin_cyrillic-regular.eot');
-    src: local('Roboto'), local('Roboto-Regular'), url('../fonts/roboto-v20-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
-    url('../fonts/roboto-v20-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
-}
-
-
-/* roboto-700 - latin_cyrillic */
-
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../fonts/roboto-v20-latin_cyrillic-700.eot');
-    src: local('Roboto Bold'), local('Roboto-Bold'), url('../fonts/roboto-v20-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
-    url('../fonts/roboto-v20-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
-}
-
-
-/* roboto-900 - latin_cyrillic */
-
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 900;
-    src: url('../fonts/roboto-v20-latin_cyrillic-900.eot');
-    src: local('Roboto Black'), local('Roboto-Black'), url('../fonts/roboto-v20-latin_cyrillic-900.woff2') format('woff2'), /* Super Modern Browsers */
-    url('../fonts/roboto-v20-latin_cyrillic-900.woff') format('woff'), /* Modern Browsers */
-}
+    /* Variables */
+    
+     :root {
+        --white: #FFFFFF;
+        --black: #000000;
+        --light-dark: #283136;
+    }
+    /* Global */
+    
+    body {
+        margin: 0;
+        font-family: "Roboto", "Arial", sans-serif;
+        font-style: normal;
+        color: var(--black);
+        font-weight: normal;
+        background-color: var(--white);
+    }
+    
+    img {
+        max-width: 100%
+    }
+    
+    a {
+        text-decoration: none
+    }
+    
+    .visually-hidden {
+        position: absolute !important;
+        clip: rect(1px 1px 1px 1px);
+        clip: rect(1px, 1px, 1px, 1px);
+        padding: 0 !important;
+        border: 0 !important;
+        height: 1px !important;
+        width: 1px !important;
+        overflow: hidden;
+        display: none;
+    }
+    
+    .uppercase {
+        text-transform: uppercase;
+    }
+    
+    .slogan {
+        font-weight: 500;
+        font-size: 55px;
+        line-height: 55px;
+    }
+    
+    .slogan-descripton {
+        font-weight: 100;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--light-dark);
+    }
+    
+    .topmenu {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 30px;
+    }
+    
+    .cart {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: right;
+    }
+    
+    .button {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+        color: var(--white);
+    }
+    
+    .servicedescription {
+        font-weight: 100;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--light-dark);
+    }
+    
+    .slogan2 {
+        font-weight: 500;
+        font-size: 45px;
+        line-height: 45px;
+    }
+    
+    .slogan2details {
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--light-dark);
+    }
+    
+    .company-date {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+    }
+    
+    .company-relusts {
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 64px;
+    }
+    
+    .percent-symbol {
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 40px;
+    }
+    
+    .company-name {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 30px;
+    }
+    
+    .discount {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 36px;
+    }
+    /*CATALOG PAGE*/
+    
+    .filter-header {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 30px;
+    }
+    
+    .sort-by-filter {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    
+    .item-header {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 30px;
+    }
+    
+    .page-swither {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    
+    .contactus {
+        display: none;
+    }
