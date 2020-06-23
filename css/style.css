@@ -24,6 +24,7 @@
         color: var(--black);
         font-weight: normal;
         background-color: var(--white);
+        height: auto;
     }
     
     img {
@@ -137,6 +138,7 @@
     .slides a:focus {
         background-color: var(--orange3);
     }
+    /*Проблема с opacity*/
     
     .partners a {
         opacity: 0.2;
@@ -145,6 +147,7 @@
     .partners a:focus {
         opacity: 0.1;
     }
+    /*Проблема с opacity*/
     
     .service-description {
         font-weight: 100;
@@ -222,6 +225,7 @@
     
     .contactus {
         display: none;
+        opacity: 0;
     }
     
     .slider,
