@@ -5,7 +5,7 @@
         --black: #000000;
         --light-dark: #283136;
         --red: #FB565A;
-        --red2: #00CA74;
+        --red2: #E74246;
         --red3: #D7373B;
         --light-backgroud: #EEEEEE;
         --green: #00CA74;
@@ -84,13 +84,28 @@
         color: var(--white);
     }
     
-    .details,
     .products {
+        background-image: url("../img/illustration-11.png");
+        width: 300px;
+    }
+    
+    .apps {
+        background-image: url("../img/illustration-21.png");
+        width: 300px;
+    }
+    
+    .slides {
+        background-image: url("../img/illustration-31.png");
+        width: 300px;
+    }
+    
+    .products a,
+    .details a {
         background-color: var(--red);
     }
     
     .details a:hover,
-    .products:hover a {
+    .products a:hover {
         background-color: var(--red2);
     }
     
@@ -111,19 +126,27 @@
         background-color: var(--green3);
     }
     
-    .prezi {
+    .slides {
         background-color: var(--orange);
     }
     
-    .prezi a:hover {
+    .slides a:hover {
         background-color: var(--orange2);
     }
     
-    .prezi a:focus {
+    .slides a:focus {
         background-color: var(--orange3);
     }
     
-    .servicedescription {
+    .partners a {
+        opacity: 0.2;
+    }
+    
+    .partners a:focus {
+        opacity: 0.1;
+    }
+    
+    .service-description {
         font-weight: 100;
         font-size: 16px;
         line-height: 24px;
@@ -136,7 +159,7 @@
         line-height: 45px;
     }
     
-    .slogan2details {
+    .slogan2-details {
         font-size: 16px;
         line-height: 24px;
         color: var(--light-dark);
