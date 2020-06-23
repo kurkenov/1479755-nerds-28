@@ -1,240 +1,268 @@
-    /* Variables */
-    
-     :root {
-        --white: #FFFFFF;
-        --black: #000000;
-        --light-dark: #283136;
-        --red: #FB565A;
-        --red2: #E74246;
-        --red3: #D7373B;
-        --light-backgroud: #EEEEEE;
-        --green: #00CA74;
-        --green2: #00BC6C;
-        --green3: #00AA62;
-        --orange: #EFC84A;
-        --orange2: #EAB534;
-        --orange3: #E5A722;
-    }
-    /* Global */
-    
-    body {
-        margin: 0;
-        font-family: "Roboto", "Arial", sans-serif;
-        font-style: normal;
-        color: var(--black);
-        font-weight: normal;
-        background-color: var(--white);
-        height: auto;
-    }
-    
-    img {
-        max-width: 100%
-    }
-    
-    a {
-        text-decoration: none
-    }
-    
-    .visually-hidden {
-        position: absolute !important;
-        clip: rect(1px 1px 1px 1px);
-        clip: rect(1px, 1px, 1px, 1px);
-        padding: 0 !important;
-        border: 0 !important;
-        height: 1px !important;
-        width: 1px !important;
-        overflow: hidden;
-        display: none;
-    }
-    
-    .uppercase {
-        text-transform: uppercase;
-    }
-    
-    .slogan {
-        font-weight: 500;
-        font-size: 55px;
-        line-height: 55px;
-    }
-    
-    .slogan-descripton {
-        font-weight: 100;
-        font-size: 16px;
-        line-height: 24px;
-        color: var(--light-dark);
-    }
-    
-    .topmenu {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 30px;
-    }
-    
-    .cart {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 30px;
-        text-align: right;
-    }
-    
-    .button {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 18px;
-        text-align: center;
-        color: var(--white);
-    }
-    
-    .products {
-        background-image: url("../img/illustration-11.png");
-        width: 300px;
-    }
-    
-    .apps {
-        background-image: url("../img/illustration-21.png");
-        width: 300px;
-    }
-    
-    .slides {
-        background-image: url("../img/illustration-31.png");
-        width: 300px;
-    }
-    
-    .products a,
-    .details a {
-        background-color: var(--red);
-    }
-    
-    .details a:hover,
-    .products a:hover {
-        background-color: var(--red2);
-    }
-    
-    .details a:focus,
-    .products a:focus {
-        background-color: var(--red3);
-    }
-    
-    .apps {
-        background-color: var(--green);
-    }
-    
-    .apps a:hover {
-        background-color: var(--green2);
-    }
-    
-    .apps a:focus {
-        background-color: var(--green3);
-    }
-    
-    .slides {
-        background-color: var(--orange);
-    }
-    
-    .slides a:hover {
-        background-color: var(--orange2);
-    }
-    
-    .slides a:focus {
-        background-color: var(--orange3);
-    }
-    /*Проблема с opacity*/
-    
-    .partners a {
-        opacity: 0.2;
-    }
-    
-    .partners a:focus {
-        opacity: 0.1;
-    }
-    /*Проблема с opacity*/
-    
-    .service-description {
-        font-weight: 100;
-        font-size: 16px;
-        line-height: 24px;
-        color: var(--light-dark);
-    }
-    
-    .slogan2 {
-        font-weight: 500;
-        font-size: 45px;
-        line-height: 45px;
-    }
-    
-    .slogan2-details {
-        font-size: 16px;
-        line-height: 24px;
-        color: var(--light-dark);
-    }
-    
-    .company-date {
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 24px;
-        text-align: center;
-    }
-    
-    .company-relusts {
-        font-weight: 700;
-        font-size: 45px;
-        line-height: 64px;
-    }
-    
-    .percent-symbol {
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 40px;
-    }
-    
-    .company-name {
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 30px;
-    }
-    
-    .discount {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 36px;
-    }
-    /*CATALOG PAGE*/
-    
-    .filter-header {
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 30px;
-    }
-    
-    .sort-by-filter {
-        font-size: 14px;
-        line-height: 18px;
-    }
-    
-    .item-header {
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 30px;
-    }
-    
-    .page-swither {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 18px;
-    }
-    
-    .contactus {
-        display: none;
-        opacity: 0;
-    }
-    
-    .slider,
-    .navigation {
-        background-color: var(--light-backgroud);
-    }
-    /* style gide*/
-    
-    .topmenu a:hover,
-    .cart a:hover {
-        color: var(--red);
-    }
+        /* Variables */
+        
+         :root {
+            --white: #FFFFFF;
+            --black: #000000;
+            --grey: #E1E1E1;
+            --light-dark: #283136;
+            --red: #FB565A;
+            --red2: #E74246;
+            --red3: #D7373B;
+            --light-backgroud: #EEEEEE;
+            --green: #00CA74;
+            --green2: #00BC6C;
+            --green3: #00AA62;
+            --orange: #EFC84A;
+            --orange2: #EAB534;
+            --orange3: #E5A722;
+        }
+        /* Global */
+        
+        body {
+            margin: 0;
+            font-family: "Roboto", "Arial", sans-serif;
+            font-style: normal;
+            color: var(--black);
+            font-weight: normal;
+            background-color: var(--white);
+            height: auto;
+        }
+        
+        img {
+            max-width: 100%
+        }
+        
+        a {
+            text-decoration: none
+        }
+        
+        .visually-hidden {
+            position: absolute !important;
+            clip: rect(1px 1px 1px 1px);
+            clip: rect(1px, 1px, 1px, 1px);
+            padding: 0 !important;
+            border: 0 !important;
+            height: 1px !important;
+            width: 1px !important;
+            overflow: hidden;
+            display: none;
+        }
+        
+        .uppercase {
+            text-transform: uppercase;
+        }
+        
+        .slogan {
+            font-weight: 500;
+            font-size: 55px;
+            line-height: 55px;
+        }
+        
+        .slogan-descripton {
+            font-weight: 100;
+            font-size: 16px;
+            line-height: 24px;
+            color: var(--light-dark);
+        }
+        
+        .topmenu {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 30px;
+        }
+        
+        .cart {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 30px;
+            text-align: right;
+        }
+        
+        .button {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 18px;
+            text-align: center;
+            color: var(--white);
+        }
+        
+        .products {
+            background-image: url("../img/illustration-11.png");
+            background-repeat: no-repeat;
+        }
+        
+        .apps {
+            background-image: url("../img/illustration-21.png");
+            background-repeat: no-repeat;
+        }
+        
+        .slides {
+            background-image: url("../img/illustration-31.png");
+            background-repeat: no-repeat;
+        }
+        
+        .products a,
+        .details a {
+            background-color: var(--red);
+        }
+        
+        .details a:hover,
+        .products a:hover {
+            background-color: var(--red2);
+        }
+        
+        .details a:focus,
+        .products a:focus {
+            background-color: var(--red3);
+        }
+        
+        .apps {
+            background-color: var(--green);
+        }
+        
+        .apps a:hover {
+            background-color: var(--green2);
+        }
+        
+        .apps a:focus {
+            background-color: var(--green3);
+        }
+        
+        .slides {
+            background-color: var(--orange);
+        }
+        
+        .slides a:hover {
+            background-color: var(--orange2);
+        }
+        
+        .slides a:focus {
+            background-color: var(--orange3);
+        }
+        /*Проблема с opacity*/
+        
+        .partners a {
+            opacity: 0.2;
+        }
+        /*Проблема с opacity*/
+        
+        .partners a:focus {
+            opacity: 0.1;
+        }
+        
+        .service-description {
+            font-weight: 100;
+            font-size: 16px;
+            line-height: 24px;
+            color: var(--light-dark);
+        }
+        
+        .slogan2 {
+            font-weight: 500;
+            font-size: 45px;
+            line-height: 45px;
+        }
+        
+        .slogan2-details {
+            font-size: 16px;
+            line-height: 24px;
+            color: var(--light-dark);
+        }
+        
+        .company-date {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+        }
+        
+        .company-relusts {
+            font-weight: 700;
+            font-size: 45px;
+            line-height: 64px;
+        }
+        
+        .percent-symbol {
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 40px;
+        }
+        
+        .company-name {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 30px;
+        }
+        
+        .discount {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 36px;
+        }
+        /*CATALOG PAGE*/
+        
+        .filter-header {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 30px;
+        }
+        
+        .sort-by-filter {
+            font-size: 14px;
+            line-height: 18px;
+        }
+        
+        .item-header {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 30px;
+        }
+        
+        .page-swither {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 18px;
+        }
+        /*Проблема с opacity со скрытием формы*/
+        
+        .contactus {
+            display: none;
+        }
+        
+        .slider,
+        .navigation {
+            background-color: var(--light-backgroud);
+        }
+        /* style gide*/
+        
+        .topmenu a:hover,
+        .cart a:hover {
+            color: var(--red);
+        }
+        /* FOOTER */
+        
+        .social-networks a {
+            background-color: var(--grey)
+        }
+        
+        .vk,
+        .fb,
+        .inst {
+            border-radius: 81px;
+            background-repeat: no-repeat;
+            width: 81px;
+            background-color: var(--grey);
+        }
+        
+        .vk {
+            background-image: url("../img/svg/vk-icon.svg");
+        }
+        
+        .inst {
+            background-image: url("../img/svg/insta-icon.svg");
+        }
+        
+        .fb {
+            background-image: url("../img/svg/fb-icon.svg");
+        }
+        /* Наведение и фокус не решил нужен желп*/
