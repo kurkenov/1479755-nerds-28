@@ -95,86 +95,97 @@
 
         <button type="submit">Показать</button>
     </section>
-    <section>
+    <section class="sort uppercase">
         <h2 class="filter-header uppercase">Сортировать</h2>
-        <a href="#" class="sort-by-filter">По цене</a>
-        <a href="#" class="sort-by-filter">По типу </a>
-        <a href="#" class="sort-by-filter">По названию</a>
-        <span>
-      <a href="#">
-        <span class="visually-hidden">
+        <a href="#" class="by-price">По цене</a>
+        <a href="#" class="by-type">По типу </a>
+        <a href="#" class="by-name">По названию</a>
+
+        <a href="#" class="sort-asc">
+
+            <span class="visually-hidden">
           Сортировка по возростанию
         </span>
         </a>
-        </span>
-        <span>
-      <a href="#">
-        <span class="visually-hidden">
+
+        <a href="#" class="sort-desc">
+            <span class="visually-hidden">
           Сортировка по убыванию
         </span>
         </a>
-        </span>
+
     </section>
     <!--Каталог товаров-->
-    <section>
+    <section class="catalog">
         <h2 class="visually-hidden">Каталог товаров</h2>
-        <ul>
-            <li>
+        <ul class="catalog-list">
+            <li class="catalog-item">
                 <!--background-image -->
                 <img src="img/img-sedona1.jpg" width="360" height="576" alt="Sedona проект">
-                <h3 class="item-header uppercase">Sedona</h3>
-                <p class="item-desc">Информационный сайт для туристов</p>
-                <a href="" class="button order">9900 &#8381;</a>
+                <div class="catalog-desc">
+                    <h3>Sedona</h3>
+                    <p>Информационный сайт для туристов</p>
+                    <a href="" class="price">9900 &#8381;</a>
+                </div>
             </li>
-            <li>
+            <li class="catalog-item">
 
                 <img src="img/img-pink1.jpg" width="360" height="576" alt="Pink проект">
-                <h3 class="item-header uppercase">Sedona</h3>
-                <p class="item-desc">ЗАМЕНИТЬ ТЕКСТ</p>
-                <a href="#" class="button order">9900 &#8381;</a>
+                <div class="catalog-desc">
+                    <h3>Pink</h3>
+                    <p>Информационный сайт для туристов</p>
+                    <a href="#" class="price">9900 &#8381;</a>
+                </div>
             </li>
-            <li>
-
-                <img src="img/img-barbershop1.jpg" width="360" height="576" alt="Barbershop проект">
-                <h3 class="item-header uppercase">Sedona</h3>
-                <p class="item-desc">ЗАМЕНИТЬ ТЕКСТ</p>
-                <a href="#" class="button order">9900 &#8381;</a>
+            <li class="catalog-item">
+                <div class="catalog-desc">
+                    <img src="img/img-barbershop1.jpg" width="360" height="576" alt="Barbershop проект">
+                    <h3>Sedona</h3>
+                    <p>Информационный сайт для туристов</p>
+                    <a href="#" class="price">9900 &#8381;</a>
+                </div>
             </li>
-            <li>
+            <li class="catalog-item">
 
                 <img src="img/img-mishka1.jpg" width="360" height="576" alt="Mishka проект">
-                <h3 class="item-header uppercase">Sedona</h3>
-                <p class="item-desc">ЗАМЕНИТЬ ТЕКСТ</p>
-                <a href="#" class="button order">9900 &#8381;</a>
+                <div class="catalog-desc">
+                    <h3>Sedona</h3>
+                    <p>Информационный сайт для туристов</p>
+                    <a href="#" class="price">9900 &#8381;</a>
+                </div>
             </li>
-            <li>
+            <li class="catalog-item">
 
                 <img src="img/img-aplus1.jpg" width="360" height="576" alt="Aplus проект">
-                <h3 class="item-header uppercase">Sedona</h3>
-                <p class="item-desc">ЗАМЕНИТЬ ТЕКСТ</p>
-                <a href="#" class="button order">9900 &#8381;</a>
+                <div class="catalog-desc">
+                    <h3>Sedona</h3>
+                    <p>Информационный сайт для туристов</p>
+                    <a href="#" class="price">9900 &#8381;</a>
+                </div>
             </li>
-            <li>
+            <li class="catalog-item">
                 <!--background-image -->
                 <img src="img/img-kvast1.jpg" width="360" height="576" alt="Kvast проект">
-                <h3 class="item-header uppercase">Sedona</h3>
-                <p class="item-desc">ЗАМЕНИТЬ ТЕКСТ</p>
-                <a href="" class="button order">9900 &#8381;</a>
+                <div class="catalog-desc">
+                    <h3>Sedona</h3>
+                    <p>Информационный сайт для туристов</p>
+                    <a href="" class="price">9900 &#8381;</a>
+                </div>
             </li>
         </ul>
         <!--переключение страниц-->
-        <ul class="uppercase">
+        <ul class="pagination-list uppercase">
             <li>
-                <a href="#" class="page-swither ">1</a>
+                <a href="#" class="pagination-item ">1</a>
             </li>
             <li>
-                <a href="#" class="page-swither">2</a>
+                <a href="#" class="pagination-item">2</a>
             </li>
             <li>
-                <a href="#" class="page-swither">3</a>
+                <a href="#" class="pagination-item">3</a>
             </li>
             <li>
-                <a href="#" class="page-swither">Следующая</a>
+                <a href="#" class="pagination-item">Следующая</a>
             </li>
         </ul>
     </section>
@@ -213,19 +224,24 @@
 
 
     </section>
-    <footer class="social-networks">
-        <h2 class="visually-hidden">Адрес и социальные сети</h2>
+
+    <footer class="footer-social">
+        <h2 class="visually-hidden">Социальные сети</h2>
         <ul>
-            <li class="vk">
-                <a href="#" class="vk-link">
+            <li>
+                <a href="#" class="social-button vk">
+                    <span class="visually-hidden">Вконтакте</span>
                 </a>
             </li>
-            <li class="fb">
-                <a href="#" class="fb-link">
+            <li>
+                <a href="#" class="social-button fb">
+
+                    <span class="visually-hidden">Фейсбук</span>
                 </a>
             </li>
-            <li class="inst">
-                <a href="#" class="insta-link">
+            <li>
+                <a href="#" class="social-button insta">
+                    <span class="visually-hidden">Инстаграм</span>
                 </a>
             </li>
         </ul>
