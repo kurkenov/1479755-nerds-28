@@ -250,24 +250,16 @@ a {
 /* Футер */
 
 .social-button {
-    color: var(--light-dark);
+    background-color: var(--grey);
+    border-radius: 50%;
 }
 
-.social-button:hover,
+.social-button:hover {
+    background-color: var(--red2)
+}
+
 .social-button:focus {
-    background-color: var(--red);
-}
-
-.insta {
-    background-image: url("../img/svg/insta-icon.svg");
-}
-
-.fb {
-    background-image: url("../img/svg/fb-icon.svg");
-}
-
-.vk {
-    background-image: url("../img/svg/vk-icon.svg");
+    background-color: var(--red3)
 }
 
 
