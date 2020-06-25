@@ -3,7 +3,7 @@
  :root {
     --white: #FFFFFF;
     --black: #000000;
-    --balck2: #444444;
+    --black2: #444444;
     --grey: #E1E1E1;
     --light-dark: #283136;
     --dark-grey: #666666;
@@ -72,7 +72,7 @@ a {
     color: var(--light-dark);
 }
 
-.topmenu {
+.topmenu a {
     font-weight: 500;
     font-size: 16px;
     line-height: 30px;
@@ -167,8 +167,9 @@ a {
     opacity: 0.2;
 }
 
-
-/*Проблема с opacity*/
+.partners a:hover {
+    opacity: 1;
+}
 
 .partners a:focus {
     opacity: 0.1;
@@ -224,120 +225,149 @@ a {
     line-height: 36px;
 }
 
-.discount-detail {
+.discount-details {
     color: var(--black2)
 }
 
 
-}
-
 /*Проблема с opacity со скрытием формы*/
+
 .contactus {
     display: none;
 }
+
 .slider,
 .navigation {
     background-color: var(--light-backgroud);
 }
+
 .topmenu a:hover,
-.cart a:hover {
+.cart:hover {
     color: var(--red);
 }
 
+
 /* Футер */
+
 .social-button {
     color: var(--light-dark);
 }
+
 .social-button:hover,
 .social-button:focus {
     background-color: var(--red);
 }
+
 .insta {
     background-image: url("../img/svg/insta-icon.svg");
 }
+
 .fb {
     background-image: url("../img/svg/fb-icon.svg");
 }
+
 .vk {
     background-image: url("../img/svg/vk-icon.svg");
 }
 
+
 /*Каталог*/
+
 .catalog h3 {
     text-transform: uppercase;
 }
+
 .price {
     background-color: var(--red);
+    color: /*--*/
 }
+
 .price:hover {
     background-color: var(--red2);
 }
+
 .price:focus {
     background-color: var(--red3);
 }
+
 .catalog-desc {
     background-color: var(--light-backgroud);
     width: 360px;
     height: 231px;
 }
+
 .filter-header {
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;
 }
+
 .sort a {
     font-size: 14px;
     line-height: 18px;
 }
+
 .item-header {
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;
 }
+
 .page-swither {
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
 }
 
+
 /* Пагинация*/
+
 .pagination-list a {
     background-color: var(--light-backgroud);
     border-radius: 3px;
     width: 50px;
     height: 50px;
 }
+
 .pagination-list a:hover {
     background-color: var(--light-grey);
 }
+
 .pagination-list a:focus {
     background-color: var(--light-grey);
     opacity: 0.3;
 }
+
 .comapny-info h3 {
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
 }
+
 .comapny-info ul {
     list-style-image: url("../img/svg/Rectangle10.svg");
 }
+
 .comapny-info li {
     vertical-align: middle;
 }
+
 .company-relusts-description {
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
 }
+
 .company-adress {
     color: var(--dark-grey);
 }
+
 .by-price,
 .by-type,
 .by-name {
     opacity: 0.3;
 }
+
 .by-price:hover,
 .by-type:hover,
 .by-name:hover {
