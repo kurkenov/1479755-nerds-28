@@ -88,19 +88,17 @@ a {
     color: var(--black);
 }
 
-
-/* Не сработало*/
-
-.logo:hover svg path {
+.logo:focus svg path {
     fill: var(--grey2);
 }
 
-.catalog-item:hover svg path {
-    fill: #4D4D4D;
+.catalog-item svg {
+    opacity: 0.12;
 }
 
-
-/* Не сработало*/
+.catalog-item:hover svg {
+    opacity: 1;
+}
 
 .button {
     font-weight: 500;
@@ -255,6 +253,11 @@ a {
 .social-button {
     background-color: var(--grey);
     border-radius: 50%;
+    width: 81px;
+    height: 81px;
+    display: block;
+    display: flex;
+    align-items: center;
 }
 
 .social-button:hover {
@@ -325,12 +328,15 @@ a {
 
 /* Пагинация*/
 
-.pagination-list a {
-    background-color: var(--light-backgroud);
-    border-radius: 3px;
-    color: var(--black);
+.pagination-list li {
     width: 50px;
     height: 50px;
+    border-radius: 3px;
+}
+
+.pagination-list a {
+    background-color: var(--light-backgroud);
+    color: var(--black);
 }
 
 .pagination-list a:hover {
@@ -376,4 +382,26 @@ a {
 .by-type:hover,
 .by-name:hover {
     opacity: 0.6;
+}
+
+.pagination-item.active {
+    background: rgba(0, 0, 0, 0.0001);
+    border: 3px solid #DBDBDB;
+}
+
+.sort-asc,
+.sort-desc {
+    color: var(--black);
+    opacity: 0.6;
+}
+
+.sort-asc:hover,
+.sort-desc:hover {
+    color: var(--black);
+    opacity: 0.3;
+}
+
+.sort-asc:focus,
+.sort-desc:focus {
+    color: var(--black);
 }
