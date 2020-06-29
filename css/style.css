@@ -73,6 +73,10 @@ a {
     color: var(--light-dark);
 }
 
+.topmenu {
+    outline: 5px solid black;
+}
+
 .topmenu a {
     font-weight: 500;
     font-size: 16px;
@@ -86,6 +90,13 @@ a {
     line-height: 30px;
     text-align: right;
     color: var(--black);
+    outline: 5px solid black;
+}
+
+.logo {
+    outline: 5px solid black;
+    width: 160px;
+    height: 65px;
 }
 
 .logo:focus svg path {
@@ -404,4 +415,53 @@ a {
 .sort-asc:focus,
 .sort-desc:focus {
     color: var(--black);
+}
+
+.page {
+    height: 100%;
+}
+
+.page-body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.navigation {
+    outline: 5px solid red;
+}
+
+.main-navigation {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-navigation-wrapper {
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.main-navigation-wrapper.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-navigation {
+    list-style: none;
+    height: 20px;
+}
+
+.site-navigation LI {
+    display: inline;
+}
+
+.topmenu2 {
+    width: 400px;
 }
