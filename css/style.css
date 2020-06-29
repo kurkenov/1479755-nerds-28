@@ -603,6 +603,52 @@ a {
     margin-top: 95px;
 }
 
+.devider2 {
+    height: 2px;
+    background-color: var(--light-backgroud);
+    margin-top: 52px;
+}
+
 .company-info2 table {
     padding-top: 26px;
+}
+
+.partners {
+    display: flex;
+    justify-content: space-between;
+}
+
+.partners li {
+    display: inline-block;
+}
+
+.social-links {
+    outline: 5px solid red;
+    margin: 0;
+}
+
+.social-links ul {
+    padding-left: 0;
+}
+
+.social-links li {
+    display: inline-block;
+    align-items: center;
+    padding-right: 5px;
+}
+
+.social-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.discount-main {
+    outline: 5px solid red;
+}
+
+.company-adr {
+    width: 319px;
+    height: 308px;
+    background-color: var(--red);
 }
