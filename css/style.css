@@ -213,13 +213,16 @@ a {
     font-weight: 500;
     font-size: 45px;
     line-height: 45px;
-    margin-bottom: 32px;
+    margin-top: 36px;
+    margin-bottom: 35px;
 }
 
 .slogan2-details {
     font-size: 16px;
     line-height: 24px;
     color: var(--light-dark);
+    padding-top: 0px;
+    margin: 0;
 }
 
 .company-date {
@@ -501,7 +504,7 @@ a {
 
 .details .button {
     padding: 20px;
-    margin: 35px 0px;
+    margin: 40px 0px;
     display: inline-block;
     padding: 17px 54px 17px 54px;
 }
@@ -522,7 +525,7 @@ a {
     font-weight: bold;
     font-size: 24px;
     margin: 0px;
-    padding-top: 20px;
+    padding-top: 22px;
 }
 
 .services-company .button {
@@ -569,6 +572,11 @@ a {
 .company-info-main {
     display: flex;
     padding-top: 26px;
+    justify-content: space-between;
+}
+
+.company-info {
+    width: 660px;
 }
 
 .company-info h3 {
@@ -576,55 +584,103 @@ a {
     line-height: 24px;
     color: var(--light-dark);
     margin: 0;
-    padding-top: 26px;
+    padding-top: 40px;
     padding-bottom: 7px;
     padding-left: 0px;
 }
 
 .company-info ul {
     margin: 0;
-    padding-top: 17px;
+    padding-top: 16px;
     padding-left: 33px;
-    list-style-image: url(../img/svg/Rectangle10.svg)
 }
 
 .company-info li {
+    list-style: none;
     margin: 0;
     padding-bottom: 28px;
 }
 
-.company-info2 img {
-    padding-top: 10px;
+.comany-info li:before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/svg/Rectangle10.svg);
+}
+
+
+/* Не отработало https://htmler.ru/2017/08/28/css-list-style-image-vyiravnivanie-po-vertikali/ */
+
+.company-info2 {
+    width: 360px;
 }
 
 .devider {
-    height: 2px;
+    border-color: var(--light-backgroud);
     background-color: var(--light-backgroud);
+    border: solid 1px var(--light-backgroud);
     margin-top: 95px;
 }
 
 .devider2 {
-    height: 2px;
+    border-color: var(--light-backgroud);
     background-color: var(--light-backgroud);
-    margin-top: 52px;
+    border: solid 1px var(--light-backgroud);
+    margin-top: 49px;
 }
 
 .company-info2 table {
     padding-top: 26px;
 }
 
-.partners {
+
+/* Блок партнеры */
+
+.partners ul {
     display: flex;
+    padding: 0;
+    margin: 0;
     justify-content: space-between;
 }
 
 .partners li {
     display: inline-block;
+    padding-top: 20px;
+    flex-grow: 1;
+}
+
+.partners a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+li.first-partner {
+    padding-top: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: -13px;
+}
+
+li.second-partner {
+    padding-top: 44px;
+    padding-left: 0px;
+    margin-left: -19px;
+}
+
+li.third-partner {
+    padding-top: 50px;
+}
+
+li.fourth-partner {
+    padding-top: 50px;
 }
 
 .social-links {
     outline: 5px solid red;
     margin: 0;
+    display: flex;
 }
 
 .social-links ul {
@@ -635,6 +691,7 @@ a {
     display: inline-block;
     align-items: center;
     padding-right: 5px;
+    vertical-align: middle
 }
 
 .social-links a {
@@ -650,5 +707,15 @@ a {
 .company-adr {
     width: 319px;
     height: 308px;
-    background-color: var(--red);
+    position: absolute;
+    top: 54px;
+    padding: 49px 50px 50px 50px;
+    box-sizing: border-box;
+    background: white;
+}
+
+.adr img {
+    margin: 0 auto;
+    width: 1440px;
+    display: block;
 }
