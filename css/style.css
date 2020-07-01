@@ -462,12 +462,10 @@ a {
     padding: 0 10px;
 }
 
-.navigation {
-    outline: 5px solid red;
-}
+.navigation {}
 
 .header-bg {
-    background-color: var(--red);
+    background-color: var(--light-backgroud);
 }
 
 .main-navigation {
@@ -692,7 +690,6 @@ li.fourth-partner {
 }
 
 .social-links {
-    outline: 5px solid red;
     margin: 0;
     display: flex;
     padding-top: 54px;
