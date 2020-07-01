@@ -250,16 +250,22 @@ a {
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;
+    margin-bottom: 22px;
 }
 
 .discount {
     font-weight: 700;
     font-size: 36px;
     line-height: 36px;
+    padding-left: 119px;
+    margin-bottom: 0px;
 }
 
 .discount-details {
-    color: var(--black2)
+    color: var(--black2);
+    padding-left: 121px;
+    padding-top: 14px;
+    margin-top: 0px;
 }
 
 
@@ -629,6 +635,14 @@ a {
     margin-top: 49px;
 }
 
+.devider3 {
+    border-color: var(--light-backgroud);
+    background-color: var(--light-backgroud);
+    border: solid 1px var(--light-backgroud);
+    margin-top: 42px;
+    margin-bottom: 80px
+}
+
 .company-info2 table {
     padding-top: 26px;
 }
@@ -681,6 +695,7 @@ li.fourth-partner {
     outline: 5px solid red;
     margin: 0;
     display: flex;
+    padding-top: 54px;
 }
 
 .social-links ul {
@@ -701,7 +716,13 @@ li.fourth-partner {
 }
 
 .discount-main {
-    outline: 5px solid red;
+    width: 880px;
+    padding-top: 39px;
+}
+
+.social-links-main {
+    display: flex;
+    justify-content: space-between;
 }
 
 .company-adr {
@@ -709,9 +730,17 @@ li.fourth-partner {
     height: 308px;
     position: absolute;
     top: 54px;
-    padding: 49px 50px 50px 50px;
+    padding: 32px 50px 50px 50px;
     box-sizing: border-box;
     background: white;
+}
+
+.company-adr a {
+    margin: 40px 0px;
+    display: inline-block;
+    padding: 17px 44px 15px 44px;
+    background-color: var(--red);
+    margin-top: 20px;
 }
 
 .adr img {
