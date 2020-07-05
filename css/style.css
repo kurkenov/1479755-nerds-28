@@ -399,7 +399,6 @@ a {
     text-align: center;
     margin-left: -5px;
     padding-bottom: 31px;
-    padding-top: -5px;
     margin-top: -4px;
 }
 
@@ -484,45 +483,37 @@ a {
 .sort {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
 }
 
 .sort li {
-    display: inline;
+    display: inline-block;
     list-style: none;
     outline: 5px solid black;
+    margin-right: 21px;
 }
 
 .sort ul {
-    padding-top: 8px;
+    padding-top: 5px;
     padding-left: 0px;
     outline: 5px solid black;
 }
 
 .by-price {
     width: 22%;
-    float: left;
     padding-left: 14px;
 }
 
 .by-type {
     width: 22%;
-    float: left;
-    padding-left: 2px;
 }
 
 .by-name {
     width: 22%;
-    padding-left: 4px;
 }
 
-.sort-asc {
-    padding-left: 42px;
-}
+.sort-asc {}
 
-.sort-desc {
-    padding-left: 10px;
-}
+.sort-desc {}
 
 .sort a {
     font-size: 14px;
@@ -898,6 +889,7 @@ li.fourth-partner {
     padding: 17px 44px 15px 44px;
     background-color: var(--red);
     margin-top: 20px;
+    border-radius: 3px;
 }
 
 .company-adr a:hover {
@@ -926,7 +918,6 @@ div.main-results {
     display: grid;
     grid-template-columns: 260px 760px;
     grid-gap: 148px;
-    padding-left: 471px;
 }
 
 .filters {}
@@ -936,7 +927,7 @@ div.main-results {
 .catalog-list {
     padding-left: 0;
     padding-top: 0;
-    margin-top: 35px;
+    margin-top: 34px;
     margin-left: 0px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -957,6 +948,10 @@ div.main-results {
 }
 
 .catalog-item:hover .catalog-desc {
+    display: block;
+}
+
+.catalog-item:hover {
     display: block;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
