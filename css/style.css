@@ -982,11 +982,11 @@ div.main-results {
     position: relative;
 }
 
-.minprice,
-.maxprice {
+.min-max-price {
     font-style: normal;
     font-weight: normal;
-    font-size: 20px
+    font-size: 20px;
+    margin-top: 16px;
 }
 
 .value1 {
