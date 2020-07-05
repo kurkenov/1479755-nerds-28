@@ -8,6 +8,7 @@
     --grey2: #A6A6A6;
     --grey3: #C1C1C1;
     --grey4: #F2F2F2;
+    --grey5: #D7DCDF;
     --light-dark: #283136;
     --dark-grey: #666666;
     --light-grey: #DFDFDF;
@@ -425,7 +426,7 @@ a {
     padding-bottom: 61px;
     display: grid;
     grid-template-columns: 50px 50px 50px 260px;
-    gap: 0px 12px;
+    gap: 0px 10px;
 }
 
 .pagination-list li {
@@ -917,7 +918,7 @@ div.main-results {
 .wrapper {
     display: grid;
     grid-template-columns: 260px 760px;
-    grid-gap: 148px;
+    grid-gap: 140px;
 }
 
 .filters {}
@@ -958,3 +959,50 @@ div.main-results {
 
 
 /*    outline: 5px solid black;*/
+
+
+/* фильтр */
+
+.filter {
+    border-width: 0px;
+    margin-left: -15px;
+    padding: 0px;
+}
+
+.filters {
+    margin-left: 15px;
+}
+
+.price-range {
+    width: 260px;
+    height: 80px;
+    background: var(--light-backgroud);
+    border-radius: 3px;
+    margin-top: 28px;
+    position: relative;
+}
+
+.minprice,
+.maxprice {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px
+}
+
+.value1 {
+    width: 135px;
+    height: 2px;
+    background: var(--green);
+    position: absolute;
+    left: 36px;
+    bottom: 38px;
+}
+
+.value2 {
+    width: 65px;
+    height: 2px;
+    background: var(--grey5);
+    position: absolute;
+    left: 170px;
+    bottom: 38px;
+}

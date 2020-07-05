@@ -59,19 +59,19 @@
             <section>
                 <h2 class="visually-hidden">Фильтры товаров</h2>
                 <form name="filter">
-                    <fieldset>
+                    <fieldset class="filter">
                         <legend>
                             <h3 class="filter-header uppercase">Стоимость </h3>
                         </legend>
-                        <p>
-                            <input type="range" min="0" max="15000" id="pricerange" name="pricerange">
-                            <label for="pricerange"></label>
-                        </p>
-                        <p>
+                        <div class="price-range">
+                            <div class="value1"></div>
+                            <div class="value2"></div>
+                        </div>
+                        <p class="minprice">
                             <label for="minprice"> от </label>
                             <input type="number" id="minprice" name="minprice" min="0">
                         </p>
-                        <p>
+                        <p class="maxprice">
                             <label for="maxprice"> до </label>
                             <input type="number" id="maxprice" name="maxprice" max="15000">
                         </p>
