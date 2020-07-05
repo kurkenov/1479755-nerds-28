@@ -257,7 +257,7 @@ a {
     font-weight: 400;
     line-height: 24px;
     color: var(--light-dark);
-    padding-top: 0px;
+    padding-top: 3px;
     margin: 0;
 }
 
@@ -275,6 +275,10 @@ a {
     font-size: 45px;
 }
 
+.company-relusts span {
+    display: inline-block;
+}
+
 .percent-symbol {
     font-weight: 700;
     font-size: 26px;
@@ -285,6 +289,7 @@ a {
     font-size: 18px;
     line-height: 30px;
     margin-bottom: 20px;
+    margin-top: 15px;
 }
 
 .discount {
@@ -298,7 +303,7 @@ a {
 .discount-details {
     color: var(--black2);
     padding-left: 121px;
-    padding-top: 14px;
+    padding-top: 10px;
     margin-top: 0px;
 }
 
@@ -420,12 +425,6 @@ a {
     opacity: 0.3;
 }
 
-.comany-info h3 {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-}
-
 .comapny-info ul {
     list-style-image: url("../img/svg/Rectangle10.svg");
 }
@@ -438,8 +437,7 @@ a {
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
-    width: 119px;
-    height: 37px;
+    margin-top: 18px;
 }
 
 .company-adress {
@@ -630,8 +628,8 @@ a {
 
 .company-info ul {
     margin: 0;
-    padding-top: 16px;
-    padding-left: 33px;
+    padding-top: 15px;
+    padding-left: 0px;
 }
 
 .company-info li {
@@ -639,7 +637,19 @@ a {
     padding-bottom: 28px;
     font-weight: 400;
     padding-left: 4px;
-    list-style-image: url('../img/svg/Rectangle10.svg');
+    list-style: none;
+}
+
+.company-info li:before {
+    display: inline-block;
+    content: "";
+    background: var(--red);
+    width: 25px;
+    height: 2px;
+    vertical-align: 2px;
+    margin-right: 10px;
+    margin-left: -2px;
+    margin-top: 0px;
 }
 
 
@@ -660,7 +670,7 @@ a {
     border-color: var(--light-backgroud);
     background-color: var(--light-backgroud);
     border: solid 1px var(--light-backgroud);
-    margin-top: -26px;
+    margin-top: 22px;
 }
 
 .devider3 {
@@ -688,6 +698,7 @@ a {
 
 .partners li {
     display: inline-block;
+    position: relative;
 }
 
 .partners a {
@@ -698,6 +709,32 @@ a {
 
 li.first-partner {
     padding-left: 33px;
+}
+
+li.first-partner::after,
+li.second-partner::after,
+li.third-partner::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    background: var(--red3);
+    width: 2px;
+    height: 52px;
+}
+
+li.first-partner::after {
+    top: 10px;
+    right: -50px;
+}
+
+li.second-partner::after {
+    top: 19px;
+    right: -52px;
+}
+
+li.third-partner::after {
+    top: 0px;
+    right: -59px;
 }
 
 li.second-partner {
@@ -784,4 +821,10 @@ div.main-results {
 
 .footer-social {
     padding-bottom: 68px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 260px 760px;
+    grid-gap: 10px;
 }
