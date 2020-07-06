@@ -9,6 +9,7 @@
     --grey3: #C1C1C1;
     --grey4: #F2F2F2;
     --grey5: #D7DCDF;
+    --grey6: #ABABAB;
     --light-dark: #283136;
     --dark-grey: #666666;
     --light-grey: #DFDFDF;
@@ -481,38 +482,33 @@ a {
     margin-top: 17px;
 }
 
-.sort {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.sort h2 {
+    display: inline-block;
 }
 
-.sort li {
+.sort {}
+
+.sortby {
+    display: inline-block;
+    padding-left: 263px;
+}
+
+.sortby li {
+    list-style: none;
+    display: inline;
+    padding-right: 22px;
+}
+
+.sortbypde-desc-asc {
+    display: inline-block;
+    padding-left: 9px;
+}
+
+.sortbypde-desc-asc li {
     display: inline-block;
     list-style: none;
-    margin-right: 21px;
+    padding-left: 12px;
 }
-
-.sort ul {
-    padding-top: 5px;
-    padding-left: 0px;
-}
-
-.by-price {
-    width: 22%;
-    padding-left: 14px;
-}
-
-.by-type {
-    width: 22%;
-}
-
-.by-name {
-    width: 22%;
-}
-
-.sort-asc {}
-
-.sort-desc {}
 
 .sort a {
     font-size: 14px;
@@ -959,7 +955,7 @@ div.main-results {
 /*    outline: 5px solid black;*/
 
 
-/* фильтр */
+/* ФИЛЬТР - СУММА */
 
 .filter {
     border-width: 0px;
@@ -976,7 +972,7 @@ div.main-results {
     height: 80px;
     background: var(--light-backgroud);
     border-radius: 3px;
-    margin-top: 28px;
+    margin-top: 31px;
     position: relative;
 }
 
@@ -984,7 +980,20 @@ div.main-results {
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
-    margin-top: 16px;
+    margin-top: 14px;
+}
+
+.min-max-price [name="minprice"],
+.min-max-price [name="maxprice"] {
+    width: 80px;
+    height: 38px;
+    background: var(--light-backgroud);
+    border-radius: 3px;
+    border-width: 0;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: var(--light-dark);
 }
 
 .value1 {
@@ -1004,3 +1013,93 @@ div.main-results {
     left: 170px;
     bottom: 38px;
 }
+
+.ranger1 {
+    position: absolute;
+    box-sizing: border-box;
+    display: block;
+    background: var(--grey6);
+    border: solid 8px var(--white);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    bottom: 30px;
+    left: 160px;
+}
+
+.ranger2 {
+    position: absolute;
+    box-sizing: border-box;
+    display: block;
+    background: var(--grey6);
+    border: solid 8px var(--white);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    bottom: 29px;
+    left: 20px;
+}
+
+.web-type {
+    margin-top: 17px;
+}
+
+
+/* ФИЛЬТР - СУММА */
+
+
+/* ФИЛЬТР - СЕТКА */
+
+.web-type [type="radio"] {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.web-type label {
+    position: relative;
+    display: inline-block;
+    padding: 0 0 0 38px;
+    cursor: pointer;
+}
+
+.web-type label::before,
+.web-type label::after {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    display: block;
+    width: 25px;
+    height: 25px;
+}
+
+.web-type label::before {
+    content: "";
+    background-image: url(../img/svg/radio-off.svg);
+}
+
+.web-type input[type="checkbox"]+label::after {
+    content: "";
+    color: #2c3e50;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.web-type input[type="radio"]:checked+label::before {
+    background-image: url(../img/svg/radio-on.svg);
+}
+
+.web-type p {
+    padding-bottom: 4px;
+    padding-top: 0px;
+    font-size: 16px;
+    font-weight: normal;
+    color: var(--light-dark);
+}
+
+.web-type legend {
+    margin-bottom: -20px;
+}
+
+
+/* ФИЛЬТР - СЕТКА */
