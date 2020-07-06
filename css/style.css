@@ -354,10 +354,6 @@ a {
 
 /*Каталог*/
 
-.catalog h3 {
-    text-transform: uppercase;
-}
-
 .price {
     background-color: var(--red);
     color: var(--white);
@@ -394,8 +390,9 @@ a {
 }
 
 .catalog-desc h3 {
-    padding-left: 143px;
     padding-top: 12px;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .catalog-desc p {
@@ -1152,11 +1149,16 @@ div.main-results {
     opacity: 0.4;
 }
 
-.web-feautres-header {
-    margin-top: 27px;
-    margin-bottom: 0px;
-    font-size: 18px;
+.web-features-header {
     line-height: 30px;
+    font-weight: 700;
+    font-size: 18px;
+    padding-top: 10px;
+    margin-bottom: 0px;
+}
+
+.web-features p {
+    padding-bottom: 5px;
 }
 
 
@@ -1172,7 +1174,7 @@ div.main-results {
     line-height: 18px;
     color: var(--black);
     margin-left: -13px;
-    margin-top: 52px;
+    margin-top: 30px;
     border-width: 0px;
 }
 
