@@ -50,13 +50,13 @@ a {
 }
 
 .visually-hidden {
-    position: absolute !important;
+    position: absolute;
     clip: rect(1px 1px 1px 1px);
     clip: rect(1px, 1px, 1px, 1px);
-    padding: 0 !important;
-    border: 0 !important;
-    height: 1px !important;
-    width: 1px !important;
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
     overflow: hidden;
     display: none;
 }
@@ -1127,13 +1127,13 @@ div.main-results {
     top: -3px;
     left: 0;
     display: block;
-    width: 25px;
-    height: 25px;
+    width: 23px;
+    height: 23px;
 }
 
 .web-features label::before {
     content: "";
-    background-image: url(../img/svg/checkbox-on.svg);
+    background-image: url(../img/svg/checkbox-off.svg);
 }
 
 .web-features input[type="checkbox"]+label::after {
@@ -1144,7 +1144,12 @@ div.main-results {
 }
 
 .web-features input[type="checkbox"]:checked+label::before {
-    background-image: url(../img/svg/checkbox-off.svg);
+    background-image: url(../img/svg/checkbox-on.svg);
+    width: 25px;
+}
+
+.web-features label:hover::before {
+    opacity: 0.4;
 }
 
 .web-feautres-header {
@@ -1153,8 +1158,6 @@ div.main-results {
     font-size: 18px;
     line-height: 30px;
 }
-
-.web-features p {}
 
 
 /* ФИЛЬТР - ОСОБЕННОСТИ */
@@ -1169,7 +1172,6 @@ div.main-results {
     line-height: 18px;
     color: var(--black);
     margin-left: -13px;
-    padding-top: 10p;
     margin-top: 52px;
     border-width: 0px;
 }
