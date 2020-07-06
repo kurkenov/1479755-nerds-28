@@ -1171,6 +1171,7 @@ div.main-results {
     margin-left: -13px;
     padding-top: 10p;
     margin-top: 52px;
+    border-width: 0px;
 }
 
 .show:hover {
