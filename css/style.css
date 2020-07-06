@@ -10,6 +10,7 @@
     --grey4: #F2F2F2;
     --grey5: #D7DCDF;
     --grey6: #ABABAB;
+    --grey7: #D5D5D5;
     --light-dark: #283136;
     --dark-grey: #666666;
     --light-grey: #DFDFDF;
@@ -1078,7 +1079,7 @@ div.main-results {
     background-image: url(../img/svg/radio-off.svg);
 }
 
-.web-type input[type="checkbox"]+label::after {
+.web-type input[type="radio"]+label::after {
     content: "";
     color: #2c3e50;
     line-height: 1.5;
@@ -1103,3 +1104,81 @@ div.main-results {
 
 
 /* ФИЛЬТР - СЕТКА */
+
+
+/* ФИЛЬТР - ОСОБЕННОСТИ */
+
+.web-features [type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.web-features label {
+    position: relative;
+    display: inline-block;
+    padding: 0 0 0 38px;
+    cursor: pointer;
+}
+
+.web-features label::before,
+.web-features label::after {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    display: block;
+    width: 25px;
+    height: 25px;
+}
+
+.web-features label::before {
+    content: "";
+    background-image: url(../img/svg/checkbox-on.svg);
+}
+
+.web-features input[type="checkbox"]+label::after {
+    content: "";
+    color: #2c3e50;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.web-features input[type="checkbox"]:checked+label::before {
+    background-image: url(../img/svg/checkbox-off.svg);
+}
+
+.web-feautres-header {
+    margin-top: 27px;
+    margin-bottom: 0px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.web-features p {}
+
+
+/* ФИЛЬТР - ОСОБЕННОСТИ */
+
+.show {
+    width: 260px;
+    height: 50px;
+    background: var(--light-backgroud);
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--black);
+    margin-left: -13px;
+    padding-top: 10p;
+    margin-top: 52px;
+}
+
+.show:hover {
+    background: var(--light-grey);
+}
+
+.show:focus {
+    background: var(--grey7);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    border-radius: 3px;
+}
