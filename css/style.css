@@ -316,8 +316,73 @@ a {
     margin-top: 0px;
 }
 
-.contactus {
-    display: none;
+
+/* форма обратной связи*/
+
+.main-adress {
+    position: relative;
+}
+
+.send-form {
+    width: 960px;
+    position: absolute;
+    background-color: red;
+    height: 590px;
+    left: 101px;
+    padding: 0px;
+    bottom: -454px;
+}
+
+.send-form-header {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    padding-top: 61px;
+    padding-left: 82px;
+    margin: 0px;
+}
+
+.send-form-email,
+.send-form-name {
+    display: inline-block;
+}
+
+.send-form-email {
+    padding-left: 37px;
+}
+
+.send-form-name {
+    margin: 0px;
+    padding-left: 84px;
+    padding-top: 30px;
+}
+
+.send-form-name label,
+.send-form-email label {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.send-form-name p,
+.send-form-email p {
+    margin: 0px;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.send-form-name input,
+.send-form-email input {
+    width: 360px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 2px solid #D7DCDE;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-top: 10px;
+    padding-left: 17px;
+    color: #444444;
 }
 
 .slider,
@@ -524,6 +589,18 @@ a {
 .by-type:hover,
 .by-name:hover {
     opacity: 0.6;
+}
+
+.by-price:active,
+.by-type:active,
+.by-name:active .by-price:focus,
+.by-type:focus,
+.by-name:focus {
+    opacity: 1;
+}
+
+.active {
+    opacity: 1;
 }
 
 .sort-asc,

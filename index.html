@@ -175,38 +175,44 @@
         <section>
             <div class="adr">
                 <h2 class="visually-hidden"> Адрес студии</h2>
-                <div class="container" style="position: relative;">
+                <div class="main-adress container">
                     <div class="company-adr">
                         <p class="company-name uppercase">NЁRDS DESIGN STUDIO</p>
                         <p class="company-adress"> 191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
                         <p>тел. +7 (812) 275-75-75</p>
                         <a href="" class="button contactus uppercase">Напишите нам</a>
                     </div>
+
+                    <div class="send-form">
+                        <form name="contactus">
+                            <fieldset>
+                                <legend>
+                                    <p class="send-form-header">Напишите нам</p>
+                                </legend>
+                                <div class="send-form-name">
+                                    <label>Ваше имя</label>
+                                    <p>
+                                        <input type="text" placeholder="Имя Фамилия" pattern="[А-Яа-я]*?\s[А-Яа-я]*">
+                                    </p>
+                                </div>
+                                <div class="send-form-email">
+                                    <label>Ваш email</label>
+                                    <p>
+                                        <input type="email" placeholder="email@example.com">
+                                    </p>
+                                </div>
+
+                                <label>Текст письма</label>
+                                <p>
+                                    <textarea placeholder="В свободной форме" rows="10">
+                    </textarea>
+                                </p>
+                                <button type="submit">Отправить</button>
+                            </fieldset>
+                        </form>
+                    </div>
                 </div>
                 <img src="img/map1.png" width="1440" height="416" alt="Карта">
-            </div>
-            <div class="contactus">
-                <form name="contactus">
-                    <fieldset>
-                        <legend>
-                            <h3>напишите нам</h3>
-                        </legend>
-                        <label>Ваше имя</label>
-                        <p>
-                            <input type="text" placeholder="Имя Фамилия" pattern="[А-Яа-я]*?\s[А-Яа-я]*">
-                        </p>
-                        <label>Ваш email</label>
-                        <p>
-                            <input type="email" placeholder="email@example.com">
-                        </p>
-                        <label>Текст письма</label>
-                        <p>
-                            <textarea placeholder="В свободной форме" rows="10">
-                </textarea>
-                        </p>
-                        <button type="submit">Отправить</button>
-                    </fieldset>
-                </form>
             </div>
         </section>
 
