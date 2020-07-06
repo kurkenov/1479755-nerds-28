@@ -406,8 +406,8 @@ a {
 .catalog-heading {
     font-weight: 500;
     font-size: 55px;
-    padding-top: 36px;
-    padding-left: 687px;
+    padding-top: 34px;
+    padding-left: 207px;
     padding-bottom: 104px;
 }
 
@@ -489,14 +489,12 @@ a {
 .sort li {
     display: inline-block;
     list-style: none;
-    outline: 5px solid black;
     margin-right: 21px;
 }
 
 .sort ul {
     padding-top: 5px;
     padding-left: 0px;
-    outline: 5px solid black;
 }
 
 .by-price {
