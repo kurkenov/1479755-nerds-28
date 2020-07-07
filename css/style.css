@@ -999,7 +999,7 @@ li.fourth-partner {
     height: 308px;
     position: absolute;
     top: 54px;
-    padding: 32px 50px 50px 50px;
+    padding: 36px 50px 50px 50px;
     box-sizing: border-box;
     background: white;
 }
@@ -1036,6 +1036,7 @@ div.main-results {
 /* CATALOG CSS*/
 
 .wrapper {
+    margin-bottom: 3px;
     display: grid;
     grid-template-columns: 260px 760px;
     grid-gap: 140px;
