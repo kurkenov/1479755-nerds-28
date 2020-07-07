@@ -82,8 +82,6 @@ a {
     padding-top: 28px;
 }
 
-.topmenu {}
-
 .topmenu a {
     font-weight: 500;
     font-size: 16px;
@@ -326,11 +324,16 @@ a {
 .send-form {
     width: 960px;
     position: absolute;
-    background-color: red;
+    background-color: var(--white);
     height: 590px;
     left: 101px;
     padding: 0px;
     bottom: -454px;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.send-form fieldset {
+    border-width: 0px;
 }
 
 .send-form-header {
@@ -342,48 +345,98 @@ a {
     margin: 0px;
 }
 
-.send-form-email,
-.send-form-name {
-    display: inline-block;
+.send-form-header a {
+    padding-left: 427px;
 }
 
-.send-form-email {
-    padding-left: 37px;
-}
-
-.send-form-name {
-    margin: 0px;
-    padding-left: 84px;
-    padding-top: 30px;
-}
-
-.send-form-name label,
-.send-form-email label {
+.send-form label {
     font-weight: 900;
     font-size: 16px;
     line-height: 18px;
 }
 
-.send-form-name p,
-.send-form-email p {
-    margin: 0px;
-    font-weight: 900;
-    font-size: 16px;
-    line-height: 18px;
-}
-
-.send-form-name input,
-.send-form-email input {
-    width: 360px;
-    height: 50px;
-    background: #FFFFFF;
-    border: 2px solid #D7DCDE;
+.send-form textarea {
+    width: 760px;
+    height: 118px;
+    background: var(--white);
+    border: 2px solid var(--grey5);
     box-sizing: border-box;
     border-radius: 3px;
+    margin-left: 84px;
     margin-top: 10px;
-    padding-left: 17px;
-    color: #444444;
+    font-size: 16px;
+    color: var(--black2);
+    opacity: 0.5;
+    padding-left: 15px;
+    padding-top: 13px;
+    font-family: "Roboto", "Arial", sans-serif;
 }
+
+.send-form input {
+    width: 360px;
+    height: 50px;
+    background: var(--white);
+    border: 2px solid var(--grey5);
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-top: 8px;
+    padding-left: 14px;
+    color: var(--black2);
+    opacity: 0.5;
+    font-size: 16px;
+}
+
+.send-form input[type=email] {
+    margin-left: 34px;
+}
+
+.send-form-names {
+    padding-left: 83px;
+    padding-top: 30px;
+    margin: 0px;
+}
+
+.send-form-name {
+    padding-right: 318px;
+}
+
+.send-form-values {
+    padding-left: 84px;
+    margin: 0px;
+}
+
+.send-email {
+    margin-left: 34px;
+}
+
+.send-form-textarea-header {
+    padding-left: 83px;
+    padding-top: 33px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0px;
+}
+
+.send-form button {
+    width: 259px;
+    height: 50px;
+    background: var(--red);
+    border-radius: 3px;
+    color: var(--white);
+    text-align: center;
+    font-size: 16px;
+    margin-left: 84px;
+    margin-top: 44px;
+    font-size: 16px;
+    color: var(--white);
+    padding-left: 8px;
+    padding-top: 4px;
+    border-width: 0px;
+}
+
+
+/* форма обратной связи*/
 
 .slider,
 .navigation {
@@ -548,8 +601,6 @@ a {
 .sort h2 {
     display: inline-block;
 }
-
-.sort {}
 
 .sortby {
     display: inline-block;
@@ -970,7 +1021,7 @@ li.fourth-partner {
     background-color: var(--red3);
 }
 
-.adr img {
+.map {
     margin: 0 auto;
     width: 1440px;
     display: block;
@@ -989,10 +1040,6 @@ div.main-results {
     grid-template-columns: 260px 760px;
     grid-gap: 140px;
 }
-
-.filters {}
-
-.items {}
 
 .catalog-list {
     padding-left: 0;
