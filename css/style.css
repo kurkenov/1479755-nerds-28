@@ -135,7 +135,6 @@ a {
 }
 
 .logo {
-    /* outline: 5px solid black;*/
     width: 160px;
     height: 65px;
     margin-top: 49px;
@@ -523,7 +522,7 @@ a {
 .catalog-heading {
     font-weight: 500;
     font-size: 55px;
-    padding-top: 34px;
+    padding-top: 39px;
     padding-left: 207px;
     padding-bottom: 104px;
 }
@@ -799,7 +798,7 @@ a {
 
 .company-info-main {
     display: flex;
-    padding-top: 26px;
+    padding-top: 30px;
     justify-content: space-between;
 }
 
@@ -865,7 +864,7 @@ a {
     border-color: var(--light-backgroud);
     background-color: var(--light-backgroud);
     border: solid 1px var(--light-backgroud);
-    margin-top: 22px;
+    margin-top: 25px;
 }
 
 .devider3 {
@@ -1004,7 +1003,7 @@ li.fourth-partner {
     background: white;
 }
 
-.company-adr a {
+.callus {
     margin: 40px 0px;
     display: inline-block;
     padding: 17px 44px 15px 44px;
@@ -1013,12 +1012,25 @@ li.fourth-partner {
     border-radius: 3px;
 }
 
-.company-adr a:hover {
+.callus:hover {
     background-color: var(--red2);
 }
 
-.company-adr a:focus {
+.callus:focus {
     background-color: var(--red3);
+}
+
+.company-number {
+    margin-bottom: 20px;
+}
+
+.company-number a {
+    font-size: 16px;
+    line-height: 18px;
+    align-items: center;
+    color: var(--dark-grey);
+    margin: 0px;
+    padding: 0px;
 }
 
 .map {
@@ -1117,6 +1129,14 @@ div.main-results {
     line-height: 22px;
     text-align: center;
     color: var(--light-dark);
+}
+
+.min-price {
+    margin-right: 6px;
+}
+
+.max-price {
+    margin-left: 25px;
 }
 
 .value1 {
@@ -1283,7 +1303,7 @@ div.main-results {
 }
 
 .web-features p {
-    padding-bottom: 5px;
+    padding-bottom: 7px;
 }
 
 
@@ -1298,8 +1318,8 @@ div.main-results {
     font-size: 16px;
     line-height: 18px;
     color: var(--black);
-    margin-left: -13px;
-    margin-top: 30px;
+    margin-left: 0px;
+    margin-top: 27px;
     border-width: 0px;
 }
 

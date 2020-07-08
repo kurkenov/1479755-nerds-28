@@ -59,7 +59,7 @@
         <div class="filters">
             <section>
                 <h2 class="visually-hidden">Фильтры товаров</h2>
-                <form name="filter">
+                <form name="filter" action="https://echo.htmlacademy.ru/">
                     <fieldset class="filter">
                         <legend>
                             <h3 class="filter-header uppercase">Стоимость </h3>
@@ -71,9 +71,9 @@
                             <div class="ranger2"></div>
                         </div>
                         <p class="min-max-price">
-                            <label for="minprice" style="margin-right: 6px;"> от </label>
+                            <label for="minprice" class="min-price"> от </label>
                             <input type="number" id="minprice" name="minprice" min="0" placeholder="0">
-                            <label for="maxprice" style="margin-left: 25px;"> до </label>
+                            <label for="maxprice" class="max-price"> до </label>
                             <input type="number" id="maxprice" name="maxprice" max="15000" placeholder="15000">
                         </p>
                     </fieldset>
@@ -83,15 +83,15 @@
                             <h3 class="filter-header uppercase">Сетка:</h3>
                         </legend>
                         <p>
-                            <input type="radio" id="adaptive" name="setka" checked>
+                            <input type="radio" id="adaptive" name="site-grid" checked>
                             <label for="adaptive">Адаптивная</label>
                         </p>
                         <p>
-                            <input type="radio" id="fix" name="setka">
+                            <input type="radio" id="fix" name="site-grid">
                             <label for="fix">Фиксированная</label>
                         </p>
                         <p>
-                            <input type="radio" id="resp" name="setka">
+                            <input type="radio" id="resp" name="site-grid">
                             <label for="resp">Резиновая</label>
                         </p>
                     </fieldset>
@@ -120,10 +120,9 @@
                             <input type="checkbox" id="fcart" name="fcart">
                             <label for="fcart">Корзина</label>
                         </p>
+                        <button type="submit" class="show uppercase">Показать</button>
                     </fieldset>
                 </form>
-
-                <button type="submit" class="show uppercase">Показать</button>
             </section>
         </div>
         <div class="items">
@@ -273,8 +272,8 @@
                     <div class="company-adr">
                         <p class="company-name uppercase">NЁRDS DESIGN STUDIO</p>
                         <p class="company-adress"> 191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
-                        <p>тел. +7 (812) 275-75-75</p>
-                        <a href="" class="button contactus uppercase">Напишите нам</a>
+                        <p class="company-number"><a href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
+                        <a href="" class="callus button contactus uppercase ">Напишите нам</a>
                     </div>
 
                     <div class="send-form visually-hidden">
@@ -285,16 +284,16 @@
                                     <a href="#" class="send-form-close"><img src="img/svg/close-cross.svg" width="21" height="21" alt="Закрыть форму"> </a>
                                 </legend>
                                 <p class="send-form-names">
-                                    <label class="send-form-name">Ваше имя:</label>
-                                    <label class="send-form-email">Ваш email:</label>
+                                    <label class="send-form-name" for="first-last-name">Ваше имя:</label>
+                                    <label class="send-form-email" for="customer-email">Ваш email:</label>
                                 </p>
                                 <p class="send-form-values">
-                                    <input type="text" placeholder="Имя Фамилия" pattern="[А-Яа-я]*?\s[А-Яа-я]*">
-                                    <input type="email" placeholder="email@example.com" class="send-email">
+                                    <input type="text" id="first-last-name" placeholder="Имя Фамилия" pattern="[А-Яа-я]*?\s[А-Яа-я]*">
+                                    <input type="email" id="customer-email" placeholder="email@example.com" class="send-email">
                                 </p>
 
-                                <p class="send-form-textarea-header"><label>Текст письма</label></p>
-                                <textarea class="send-text" placeholder="В свободной форме" rows="10"></textarea>
+                                <p class="send-form-textarea-header"><label for="text-from-form">Текст письма</label></p>
+                                <textarea id="text-from-form" class="send-text" placeholder="В свободной форме" rows="10"></textarea>
                                 <button type="submit" class="uppercase">Отправить</button>
                             </fieldset>
                         </form>
